@@ -35,7 +35,7 @@ small {
   border-radius: 10px;
 }
 
-.cities {
+.city {
   display: flex;
   justify-content: space-evenly;
   margin: 10px 0;
