@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World Clock - Kristin Kessler</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
-    />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>World Clock - Kristin Kessler</title>
   </head>
   <body>
     <div class="container">
@@ -22,19 +20,19 @@
         <option value="">Rome</option>
       </select>
 
-      <div class="cities">
+      <div class="cities" id="los-angeles">
         <div>
           <h2>Los Angeles</h2>
-          <div class="date">Monday 29 of January 2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">19:58 <small>h</small></div>
+        <div class="time"></div>
       </div>
-      <div class="cities">
+      <div class="cities" id="sydney">
         <div>
           <h2>Sydney</h2>
-          <div class="date">Monday 29 of January 2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">19:58 <small>h</small></div>
+        <div class="time"></div>
       </div>
     </div>
     <br />
