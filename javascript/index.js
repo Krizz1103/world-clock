@@ -22,6 +22,18 @@ function updateTime() {
       "hh:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let madridElement = document.querySelector("#madrid");
+  if (madridElement) {
+    let madridDate = madridElement.querySelector(".date");
+    let madridTimeElement = madridElement.querySelector(".time");
+    let madridTime = moment().tz("Europe/Madrid");
+
+    madridDate.innerHTML = madridTime.format("dddd Do MMMM YYYY");
+    madridTimeElement.innerHTML = madridTime.format(
+      "hh:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -38,7 +50,7 @@ function updateCity(event) {
     <h2>${cityName}</h2>
     <div class="date">${cityTime.format("dddd Do MMMM YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("hh:mm:ss A")}</div>
+    <div class="time">${cityTime.format("hh:mm:ss [<small>]A[</small>]")}</div>
     </div>
    </div>
    <a href="index.html"> Back to cities </a>`;
